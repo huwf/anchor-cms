@@ -1,0 +1,101 @@
+.idea/
+
+# Byte-compiled / optimized / DLL files
+flask/__pycache__/
+flask/*.py[cod]
+flask/*$py.class
+
+# C extensions
+flask/*.so
+
+# Distribution / packaging
+flask/.Python
+flask/build/
+flask/develop-eggs/
+flask/dist/
+flask/downloads/
+flask/eggs/
+flask/.eggs/
+flask/lib/
+flask/lib64/
+flask/parts/
+flask/sdist/
+flask/var/
+flask/wheels/
+flask/*.egg-info/
+flask/.installed.cfg
+flask/*.egg
+
+# PyInstaller
+
+#  Usually these files are written by a python script from a template
+
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+flask/*.manifest
+flask/*.spec
+
+# Installer logs
+flask/pip-log.txt
+flask/pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+flask/htmlcov/
+flask/.tox/
+flask/.coverage
+flask/.coverage.*
+flask/.cache
+flask/nosetests.xml
+flask/coverage.xml
+flask/*.cover
+flask/.hypothesis/
+
+# Translations
+flask/*.mo
+flask/*.pot
+
+# Django stuff:
+flask/*.log
+flask/local_settings.py
+
+# Flask stuff:
+flask/instance/
+flask/.webassets-cache
+
+# Scrapy stuff:
+flask/.scrapy
+
+# Sphinx documentation
+flask/docs/_build/
+
+# PyBuilder
+flask/target/
+
+# Jupyter Notebook
+flask/.ipynb_checkpoints
+
+# pyenv
+flask/.python-version
+
+# celery beat schedule file
+flask/celerybeat-schedule
+
+# SageMath parsed files
+flask/*.sage.py
+
+# Environments
+flask/.env
+flask/.venv
+flask/env/
+flask/venv/
+flask/ENV/
+
+# Spyder project settings
+flask/.spyderproject
+flask/.spyproject
+
+# Rope project settings
+flask/.ropeproject
+
+
+# mypy
+flask/.mypy_cache/

@@ -1,0 +1,19 @@
+version: '3.0'
+services:
+  anchor-db:
+    container_name: anchor_db
+    image: mysql:8.0.2
+    volumes:
+        - "./volumes/mysql:/var/lib/mysql:rw"
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_USER=app_user
+      - MYSQL_PASSWORD=password
+      - MYSQL_DATABASE=anchor
+  anchor-server:
+    depends_on: anchor-db
+    container_name: anchor_server
+    expose:
+      - "80"
+    image: huwf/anchor-cms
+    entrypoint: ["/wait-for-it", "docker-php-entrypoint"]
